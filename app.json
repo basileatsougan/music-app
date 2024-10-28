@@ -2,7 +2,7 @@
   "expo": {
     "name": "music-app",
     "slug": "music-app",
-    "Sheme": "music-app",
+    "scheme": "music-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.spotify"
     },
     "web": {
       "favicon": "./assets/favicon.png"
