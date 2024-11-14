@@ -7,8 +7,8 @@ import { Entypo } from "@expo/vector-icons";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { NavigationContainer } from "@react-navigation/native";
 import LoginScreen from "./screens/LoginScreen";
+import LikedSongScreen from "./screens/LikedSongScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -70,17 +70,21 @@ const Stack = createNativeStackNavigator();
 function Navigation() {
   return (
     <Stack.Navigator>
+      {/* <Stack.Screen
+        name="Login"
+        component={LoginScreen}
+        options={{ headerShown: false }}
+      /> */}
       <Stack.Screen
         name="Main"
         component={BottomTabs}
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="Login"
-        component={LoginScreen}
+        name="Liked"
+        component={LikedSongScreen}
         options={{ headerShown: false }}
       />
-      
     </Stack.Navigator>
   );
 }

@@ -20,11 +20,20 @@
         <action android:name="android.intent.action.MAIN"/>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
+
+      <!-- For your app's custom scheme -->
       <intent-filter>
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="music-app"/>
+        <data android:scheme="music-app" android:host="auth"/>
+      </intent-filter>
+
+<!-- For Spotify's scheme -->
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="com.spotify"/>
       </intent-filter>
     </activity>
