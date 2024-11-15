@@ -1,6 +1,13 @@
-import { View, Text, ScrollView, Pressable, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  Pressable,
+  TextInput,
+  FlatList,
+} from "react-native";
 import React, { useState } from "react";
-
+import { SafeAreaView } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
 import { useNavigation } from "@react-navigation/native";
 
@@ -8,6 +15,9 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import Entypo from "@expo/vector-icons/Entypo";
+
+import { data } from "../constants/data";
+import SongItem from "../components/SongItem";
 
 const LikedSongScreen = () => {
   const navigation = useNavigation();
@@ -102,7 +112,7 @@ const LikedSongScreen = () => {
             <MaterialCommunityIcons
               name="cross-bolnisi"
               size={24}
-              color="#`1DB954"
+              color="#1DB954"
             />
 
             <Pressable
@@ -119,6 +129,12 @@ const LikedSongScreen = () => {
             </Pressable>
           </View>
         </Pressable>
+
+        <FlatList
+          data={data.gospel}
+          renderItem={({ item }) => <SongItem item={item} />}
+          nestedScrollEnabled={true}
+        />
       </ScrollView>
     </LinearGradient>
   );
