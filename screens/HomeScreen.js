@@ -182,7 +182,6 @@ const HomeScreen = () => {
             </View>
           </View>
         </View>
-        <Text style={{ color: "white" }}>Hi nnnnnnnnnnnnn</Text>
         <FlatList
           data={recentlyplayed}
           render={renderItem}
@@ -193,7 +192,6 @@ const HomeScreen = () => {
           nestedScrollEnabled={true}
           horizontal
         />
-        <Text style={{ color: "white" }}>Hi nnnnnnnnnnnnn</Text>
       </ScrollView>
     </LinearGradient>
   );

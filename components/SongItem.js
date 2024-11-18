@@ -3,7 +3,7 @@ import React from "react";
 
 import { AntDesign, Entypo } from "@expo/vector-icons";
 
-import { data } from "../constants/data";
+import { data } from "../constants/data.js";
 const SongItem = ({ item }) => {
   return (
     <Pressable
