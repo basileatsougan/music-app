@@ -1,146 +1,305 @@
-import davidson_madziha from "../assets/images/gospel/davidson_madziha.jpg";
-import ks_bloom_foutou from "../assets/images/gospel/ks_bloom_foutou.jpg";
-import morijah_mon_ami from "../assets/images/gospel/morijah_mon_ami.jpg";
-
-import above_all from "../assets/images/adoration/above_all.jpg";
-import mercy_chinwo_wonder from "../assets/images/adoration/mercy_chinwo_wonder.jpg";
-import simiane_louer from "../assets/images/adoration/simiane_louer.jpg";
-import valerie_presence from "../assets/images/adoration/valerie_presence.jpg";
-
-import mawuto_tetey from "../assets/images/artiste/mawuto_tetey.jpg";
-import mme_abitor from "../assets/images/artiste/mme_abitor.jpg";
-import simiane_l from "../assets/images/artiste/simiane.jpg";
-
-import abitor_wlidina_t from "../assets/musics/abitor_wlidina.mp3";
-import morijah_mon_ami_t from "../assets/musics/morijah_mon_ami.mp3";
-import davidson_madziha_t from "../assets/musics/davidson_madziha.mp3";
-import ks_bloom_foutou_t from "../assets/musics/ks_bloom_foutou.mp3";
-import maweta from "../assets/musics/maweta_megaxanuo.mp3";
-import okello from "../assets/musics/okello_never_fails.mp3";
-import simiane_detroner_t from "../assets/musics/simiane_detroner.mp3";
+// import "react-native-get-random-values";
+// import { v4 as uuidv4 } from "uuid";
 
 export const data = {
   gospel: [
     {
-      id: "1",
-      title: "Titre 1",
-      author: "Auteur 1",
-      imageUrl: davidson_madziha,
-      track: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      id: 99,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/swimming.mp3",
     },
     {
-      id: "2",
-      title: "Titre 2",
-      author: "Auteur 2",
-      imageUrl: ks_bloom_foutou,
-      track: ks_bloom_foutou_t,
+      id: 1,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
     },
     {
-      id: "3",
-      title: "Titre 3",
-      author: "Auteur 3",
-      imageUrl: morijah_mon_ami,
-      track: morijah_mon_ami_t,
+      id: 2, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
     },
     {
-      id: "4",
-      title: "Titre 1",
-      author: "Auteur 1",
-      imageUrl: davidson_madziha,
-      track: davidson_madziha_t,
+      id: 3, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
     },
     {
-      id: "5",
-      title: "Titre 2",
-      author: "Auteur 2",
-      imageUrl: ks_bloom_foutou,
-      track: ks_bloom_foutou_t,
+      id: 4, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
     },
     {
-      id: "6",
-      title: "Titre 3",
-      author: "Auteur 3",
-      imageUrl: morijah_mon_ami,
-      track: morijah_mon_ami_t,
+      id: 5,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
     },
     {
-      id: "7",
-      title: "Titre 1",
-      author: "Auteur 1",
-      imageUrl: davidson_madziha,
-      track: davidson_madziha_t,
+      id: 6, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
     },
     {
-      id: "8",
-      title: "Titre 2",
-      author: "Auteur 2",
-      imageUrl: ks_bloom_foutou,
-      track: ks_bloom_foutou_t,
+      id: 7, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
     },
     {
-      id: "9",
-      title: "Titre 3",
-      author: "Auteur 3",
-      imageUrl: morijah_mon_ami,
-      track: morijah_mon_ami_t,
+      id: 8, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
     },
-    {
-      id: "11",
-      title: "Titre 1",
-      author: "Auteur 1",
-      imageUrl: davidson_madziha,
-      track: davidson_madziha_t,
-    },
-    {
-      id: "12",
-      title: "Titre 2",
-      author: "Auteur 2",
-      imageUrl: ks_bloom_foutou,
-      track: ks_bloom_foutou_t,
-    },
-    {
-      id: "13",
-      title: "Titre 3",
-      author: "Auteur 3",
-      imageUrl: morijah_mon_ami,
-      track: morijah_mon_ami_t,
-    },
+    // {
+    //   id: 458, //
+    //   title: "",
+    //   author: "",
+    //   imageUrl: "",
+    //   track: "",
+    // },
   ],
   adoration: [
-    { id: "1", title: "Titre 1", author: "Auteur 1", imageUrl: above_all },
     {
-      id: "2",
-      title: "Titre 2",
-      author: "Auteur 2",
-      imageUrl: mercy_chinwo_wonder,
+      id: 9,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
     },
-    { id: "3", title: "Titre 3", author: "Auteur 3", imageUrl: simiane_louer },
+    {
+      id: 10, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
+    },
+    {
+      id: 11, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
+    },
+    {
+      id: 12, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
+    },
+    {
+      id: 13,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
+    },
+    {
+      id: 14, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
+    },
+    {
+      id: 15, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
+    },
+    {
+      id: 16, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
+    },
   ],
   nouveaute: [
     {
-      id: "1",
-      title: "Titre 1",
-      author: "Auteur 1",
-      imageUrl: "nouveaute1.jpg",
+      id: 17,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
     },
     {
-      id: "2",
-      title: "Titre 2",
-      author: "Auteur 2",
-      imageUrl: "nouveaute2.jpg",
+      id: 18, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
     },
     {
-      id: "3",
-      title: "Titre 3",
-      author: "Auteur 3",
-      imageUrl: "nouveaute3.jpg",
+      id: 19, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
+    },
+    {
+      id: 20, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
+    },
+    {
+      id: 20,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
+    },
+    {
+      id: 21, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
+    },
+    {
+      id: 22, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
+    },
+    {
+      id: 23, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
     },
   ],
   artistes: [
-    { id: "1", name: "Artiste 1", imageUrl: mawuto_tetey },
-    { id: "2", name: "Artiste 2", imageUrl: mme_abitor },
-    { id: "3", name: "Artiste 3", imageUrl: simiane_l },
+    {
+      id: 24, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      name: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+    },
+    {
+      id: 25, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      name: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+    },
+    {
+      id: 26,
+      title: "Le choix de Dieu",
+      name: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+    },
+    {
+      id: 27, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      name: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+    },
+    {
+      id: 28, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      name: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+    },
+    {
+      id: 29, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      name: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+    },
+    {
+      id: 30,
+      title: "Le choix de Dieu",
+      name: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+    },
+    {
+      id: 31, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      name: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+    },
   ],
 };
 
-console.log(davidson_madziha, ks_bloom_foutou, morijah_mon_ami);
+// data.gospel.forEach((song) => {
+//   console.log(song.track);
+// });
+
+// Using map
+// const titles = data.gospel.map(song => song.title);
+// console.log(titles);

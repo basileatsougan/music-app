@@ -4,6 +4,7 @@ import Navigation from "../StackNavigator";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { PlayerContext } from "../PlayerContext";
+import { ModalPortal } from "react-native-modals";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <PlayerContext>
           <Navigation />
+          <ModalPortal />
         </PlayerContext>
       </SafeAreaView>
     </>
@@ -23,3 +25,4 @@ const styles = StyleSheet.create({
     //backgroundColor: "#fff",
   },
 });
+// 3:28
