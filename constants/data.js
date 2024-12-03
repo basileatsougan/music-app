@@ -204,7 +204,7 @@ export const data = {
         "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
     },
     {
-      id: 20,
+      id: 220,
       title: "Le choix de Dieu",
       author: "AeN x Rosny Kayiba",
       imageUrl:
@@ -238,6 +238,44 @@ export const data = {
         "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
       track:
         "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
+    },
+  ],
+  recent: [
+    {
+      id: 119, // Hulvey-Lecrae_WALK-Official-Live.mp3
+      title: "WALK",
+      author: "Hulvey Lecrae",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Hulvey-Lecrae_WALK-Official-Live.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Hulvey-Lecrae_WALK-Official-Live.mp3",
+    },
+    {
+      id: 120, // Jonathan-C-Gambela_Grand-Dieu.mp3
+      title: "Grand Dieu",
+      author: "Jonathan C Gambela",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/Jonathan-C-Gambela_Grand-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/Jonathan-C-Gambela_Grand-Dieu.mp3",
+    },
+    {
+      id: 121,
+      title: "Le choix de Dieu",
+      author: "AeN x Rosny Kayiba",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/AeN-x-Rosny-Kayiba_Le-choix-de-Dieu.mp3",
+    },
+    {
+      id: 122, // DEBORAH-LUKALU_We-Testify.mp3
+      title: "We Testify",
+      author: "DEBORAH LUKALU",
+      imageUrl:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/images/DEBORAH-LUKALU_We-Testify.jpg",
+      track:
+        "https://spotify-music-app.s3.eu-north-1.amazonaws.com/songs/DEBORAH-LUKALU_We-Testify.mp3",
     },
   ],
   artistes: [

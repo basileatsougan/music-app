@@ -7,57 +7,56 @@ import {
   Pressable,
   FlatList,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { useNavigation } from "expo-router";
+import { data } from "../constants/data";
+import ArtisCard from "../components/ArtistCard";
+import RecentlyPlayedCard from "../components/RecentlyPlayedCard";
 
 const HomeScreen = () => {
-  const navigation = useNavigation();
-  const renderItem = ({ item }) => (
-    <Pressable
-      style={{
-        flex: 1,
-        flexDirection: "row",
-        justifyContent: "space-between",
-        marginHorizontal: 10,
-        marginVertical: 8,
-        backgroundColor: "#282828",
-        borderRadius: 4,
-        elevation: 3,
-      }}
-    >
-      <Image
-        source={{ uri: "https://i.pravatar.cc/100" }}
-        style={{ width: 55, height: 55 }}
-      />
-      <View style={{ flex: 1, marginHorizontal: 8, justifyContent: "center" }}>
-        <Text style={{ color: "white", fontSize: 13, fontWeight: "bold" }}>
-          {item.title}
-        </Text>
-      </View>
-    </Pressable>
-  );
+  const [recentlyPlayed, setRecentlyPlayed] = useState(data.recent);
 
-  const recentlyplayed = [
-    {
-      id: "bd7acbea-c1b1-46c2-aed5-3ad53abb28ba",
-      title: "First Music Item",
-    },
-    {
-      id: "3ac68afc-c605-48d3-a4f8-fbd91aa97f63",
-      title: "Second Music Item",
-    },
-    {
-      id: "58694a0f-3da1-471f-bd96-145571e29d72",
-      title: "Third Music Item",
-    },
-  ];
+  const [topArtist, setTopArtist] = useState(data.adoration);
+
+  const renderItem = ({ item }) => {
+    return (
+      <Pressable
+        style={{
+          flex: 1,
+          flexDirection: "row",
+          justifyContent: "space-between",
+          marginHorizontal: 10,
+          marginVertical: 8,
+          backgroundColor: "#282828",
+          borderRadius: 4,
+          elevation: 3,
+        }}
+      >
+        <Image
+          source={{ uri: item.imageUrl }}
+          style={{ width: 55, height: 55 }}
+        />
+        <View
+          style={{ flex: 1, marginHorizontal: 8, justifyContent: "center" }}
+        >
+          <Text style={{ color: "white", fontSize: 13, fontWeight: "bold" }}>
+            {item.title}
+          </Text>
+        </View>
+      </Pressable>
+    );
+  };
+
+  console.log("New recentlyPlayed played : ", recentlyPlayed);
+
+  const navigation = useNavigation();
   return (
     <LinearGradient colors={["#040306", "#131624"]} style={{ flex: 1 }}>
-      <ScrollView style={{ marginTop: 40 }}>
+      <ScrollView style={{ marginTop: 15 }}>
         <View
           style={{
             flexDirection: "row",
@@ -182,16 +181,59 @@ const HomeScreen = () => {
             </View>
           </View>
         </View>
+
+        {/* for top recently played */}
         <FlatList
-          data={recentlyplayed}
-          render={renderItem}
-          // numColumns={2}
-          // key={`numColumns-${2}`} // Use numColumns in the key to force re-render if it changes
+          data={recentlyPlayed}
+          renderItem={renderItem}
+          numColumns={2}
           keyExtractor={(item) => item.id}
-          // columnWrapperStyle={{ justifyContent: "space-between" }}
-          nestedScrollEnabled={true}
-          horizontal
+          columnWrapperStyle={{ justifyContent: "space-between" }}
+          // nestedScrollEnabled={true}
         />
+        <Text
+          style={{
+            color: "white",
+            fontSize: 19,
+            fontWeight: "bold",
+            marginHorizontal: 10,
+            marginTop: 10,
+          }}
+        >
+          Your Top Artist
+        </Text>
+
+        {/* Your Top Artist */}
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          {topArtist.map((item, index) => (
+            <ArtisCard item={item} key={index} />
+          ))}
+        </ScrollView>
+
+        {/* Final Recently played */}
+        <View style={{ height: 10 }} />
+        <Text
+          style={{
+            color: "white",
+            fontSize: 19,
+            fontWeight: "bold",
+            marginHorizontal: 10,
+            marginTop: 10,
+          }}
+        >
+          Recently Played
+        </Text>
+        <FlatList
+          data={recentlyPlayed}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          keyExtractor={(item) => item.id.toString()}
+          renderItem={({ item, index }) => (
+            <RecentlyPlayedCard item={item} key={index} />
+          )}
+        />
+
+        <View style={{ height: 20 }} />
       </ScrollView>
     </LinearGradient>
   );
