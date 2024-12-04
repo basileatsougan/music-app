@@ -9,6 +9,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "./screens/LoginScreen";
 import LikedSongScreen from "./screens/LikedSongScreen";
+import SongInfoScreen from "./screens/SongInfoScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -83,6 +84,11 @@ function Navigation() {
       <Stack.Screen
         name="Liked"
         component={LikedSongScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Info"
+        component={SongInfoScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

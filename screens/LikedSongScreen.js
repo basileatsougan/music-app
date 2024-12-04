@@ -27,6 +27,7 @@ import SongItem from "../components/SongItem";
 
 import { Audio } from "expo-av";
 import { BottomModal, ModalContent } from "react-native-modals";
+import { debounce } from "lodash";
 
 const LikedSongScreen = () => {
   const navigation = useNavigation();
@@ -35,6 +36,7 @@ const LikedSongScreen = () => {
   const { currentTrack, setCurrentTrack } = useContext(Player);
   const [modalVisible, setModalVisible] = useState(false);
   const [currentSound, setCurrentSound] = useState(null);
+  const [searchedTracks, setsearchedTracks] = useState([]);
 
   // the 03 values for the progression of the sound
   const [progress, setProgress] = useState(null);
@@ -170,6 +172,18 @@ const LikedSongScreen = () => {
     }
   };
 
+  const debouncedSearch = debounce(handleSearch, 800);
+
+  function handleSearch(search) {
+    const filteredTracks = savedTracks.filter;
+  }
+
+  const handleInputChange = (text) => {
+    setInput(text);
+    debouncedSearch(text);
+    // console.log("Debounced search", debouncedSearch);
+  };
+
   return (
     <>
       <LinearGradient colors={["#614385", "#516395"]} style={{ flex: 1 }}>
@@ -206,7 +220,7 @@ const LikedSongScreen = () => {
               <AntDesign name="search1" size={24} color="white" />
               <TextInput
                 value={input}
-                onChangeText={(text) => setInput(text)}
+                onChangeText={(text) => handleInputChange(text)}
                 placeholder="Find in liked songs"
                 placeholderTextColor={"white"}
                 style={{ fontWeight: "600" }}
